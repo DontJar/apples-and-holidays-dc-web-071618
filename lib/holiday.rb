@@ -43,8 +43,3 @@ def all_holidays_with_bbq(holiday_hash)
   end
   arr
 end
-
-  # contacts["Freddy Mercury"].each do |names, facts|
-  # if names == :favorite_icecream_flavors
-  #     facts.delete_if do |x|
-  #     x == "strawberry"
