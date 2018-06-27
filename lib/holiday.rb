@@ -37,10 +37,11 @@ def all_holidays_with_bbq(holiday_hash)
   holiday_hash.map do |season, holiday|
     holiday.map do |event, supply|
       if supply.include?("BBQ")
-        event << arr
-      end  
+        arr << event
+      end
     end
   end
+  arr
 end
 
   # contacts["Freddy Mercury"].each do |names, facts|
