@@ -33,9 +33,9 @@ def all_supplies_in_holidays(holiday_hash)
 end
 
 def all_holidays_with_bbq(holiday_hash)
-  holiday_hash.find do |season, holiday|
+  holiday_hash.,ap do |season, holiday|
     holiday.map do |event, supply|
-      puts "#{event} has a BBQ!" if supply == "BBQ"
+      puts "#{event} has a BBQ!" if supply == ["BBQ"]
     end
   end
 end
