@@ -33,14 +33,12 @@ def all_supplies_in_holidays(holiday_hash)
 end
 
 def all_holidays_with_bbq(holiday_hash)
-  holiday_hash.map do |season, holiday|
+  holiday_hash.each do |season, holiday|
     holiday.map do |event, supply|
       puts "#{event} has a BBQ!" if supply == "BBQ"
     end
   end
 end
-
-
 
   # contacts["Freddy Mercury"].each do |names, facts|
   # if names == :favorite_icecream_flavors
